@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="mx-0 flex w-full max-w-full flex-col gap-4 py-1 sm:max-w-lg sm:flex-row md:mx-auto">
         <div className="flex w-full flex-col gap-2 sm:flex-row sm:gap-4">
           <Link
-            href="https://github.com/Ahmed-Mouzoune/nextjs-strapi-boilerplate"
+            href="https://github.com/Ahmed-Mouzoune/nextjs-strapi-blog"
             target="_blank"
             className={cn(
               buttonVariants({
@@ -64,7 +64,7 @@ export default function Hero() {
             <GitHubLogoIcon className="size-5" /> Give a star ⭐{" "}
           </Link>
           <Link
-            href="https://github.com/new?template_name=nextjs-strapi-boilerplate&template_owner=Ahmed-Mouzoune"
+            href="https://github.com/new?template_name=nextjs-strapi-blog&template_owner=Ahmed-Mouzoune"
             target="_blank"
             className={cn(
               buttonVariants({

@@ -1,17 +1,51 @@
 {
-  "extends": "@nextjs-strapi-boilerplate/tsconfig/nextjs.json",
+  // "extends": "@nextjs-strapi-boilerplate/tsconfig/nextjs.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@public/*": ["public/*"],
-      "@utils/*": ["src/utils/*"],
-      "@hooks/*": ["src/lib/hooks/*"],
-      "@components/*": ["src/components/*"],
-      "@lib/*": ["src/lib/*"],
-      "@use-cases/*": ["src/use-cases/*"]
+      "@/*": [
+        "src/*"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ],
+      "@hooks/*": [
+        "src/lib/hooks/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@lib/*": [
+        "src/lib/*"
+      ],
+      "@use-cases/*": [
+        "src/use-cases/*"
+      ]
     },
-    "plugins": [{ "name": "next" }]
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
   },
   "include": [
     ".",
@@ -22,5 +56,7 @@
     ".next/types/**/*.ts",
     "next.config.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

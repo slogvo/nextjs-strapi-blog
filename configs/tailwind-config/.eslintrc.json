@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["@nextjs-strapi-boilerplate/eslint-config/base"]
+  "extends": ["@nextjs-strapi-blog/eslint-config/base"]
 }

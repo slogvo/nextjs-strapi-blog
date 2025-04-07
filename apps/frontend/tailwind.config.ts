@@ -1,74 +1,37 @@
 import type { Config } from "tailwindcss";
 
-import baseConfig from "@nextjs-strapi-boilerplate/tailwind-config";
-
 export default {
+  darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/react-notion-blocks/**/*.{js,ts,jsx,tsx,css}",
   ],
-  presets: [baseConfig],
   theme: {
     extend: {
-      fontFamily: {
-        lexend: ["Lexend Deca", "sans-serif"],
+      screens: {
+        xs: "475px",
       },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+      colors: {
+        rating: "rgb(var(--rating))",
+        primary: {
+          50: "#fdf2f7",
+          100: "#fce7f1",
+          200: "#fad0e4",
+          300: "#f8a9cc",
+          400: "#f274a9",
+          500: "#ec5e95",
+          600: "#d82a64",
+          700: "#bc1a4c",
+          800: "#9b193f",
+          900: "#811a38",
+          950: "#4f081c",
+          DEFAULT: "#ec5e95",
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        shimmer: {
-          "0%, 90%, 100%": {
-            "background-position": "calc(-100% - var(--shimmer-width)) 0",
-          },
-          "30%, 60%": {
-            "background-position": "calc(100% + var(--shimmer-width)) 0",
-          },
-        },
-        gradient: {
-          to: {
-            backgroundPosition: "var(--bg-size) 0",
-          },
-        },
-        "border-beam": {
-          "100%": {
-            "offset-distance": "100%",
-          },
-        },
-        marquee: {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(calc(-100% - var(--gap)))" },
-        },
-        "marquee-vertical": {
-          from: { transform: "translateY(0)" },
-          to: { transform: "translateY(calc(-100% - var(--gap)))" },
-        },
-        "background-shine": {
-          from: {
-            backgroundPosition: "0 0",
-          },
-          to: {
-            backgroundPosition: "-200% 0",
-          },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        shimmer: "shimmer 8s infinite",
-        gradient: "gradient 8s linear infinite",
-        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
-        marquee: "marquee var(--duration) linear infinite",
-        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-        "background-shine": "background-shine 2s linear infinite",
       },
     },
   },
+  plugins: [require("tailwindcss-animate")],
+  safelist: ["text-[#ff3946]"],
 } satisfies Config;
