@@ -7,7 +7,7 @@ import type {
   StrapiResponseCollection,
   StrapiUrlParams,
   StrapiUrlPostParams,
-} from "@nextjs-strapi-boilerplate/backend";
+} from "@nextjs-strapi-blog/backend";
 import type { Metadata } from "next";
 import qs from "qs";
 import type { ApiContentTypeUid } from "./type";

@@ -36,8 +36,8 @@ This is a monorepo boilerplate setup using Next.js for the frontend and Strapi f
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/slogvo/nextjs-strapi-boilerplate.git
-   cd nextjs-strapi-boilerplate
+   git clone https://github.com/slogvo/nextjs-strapi-blog.git
+   cd nextjs-strapi-blog
    ```
 
 2. Install dependencies:

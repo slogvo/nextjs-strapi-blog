@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-strapi-boilerplate",
+  "name": "nextjs-strapi-blog",
   "private": true,
   "author": "Abderrahmane MOUZOUNE",
   "packageManager": "yarn@1.22.19",
