@@ -1,5 +1,5 @@
 {
-  "name": "@nextjs-strapi-boilerplate/prettier-config",
+  "name": "@nextjs-strapi-blog/prettier-config",
   "version": "1.0.0",
   "private": true,
   "description": "prettier config",

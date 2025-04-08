@@ -13,7 +13,7 @@
     "format": "prettier --check \"**/*.{js,json}\"",
     "lint": "eslint ."
   },
-  "prettier": "@nextjs-strapi-boilerplate/prettier-config",
+  "prettier": "@nextjs-strapi-blog/prettier-config",
   "dependencies": {
     "@next/eslint-plugin-next": "^14.0.4",
     "@types/eslint": "^8.44.8",
