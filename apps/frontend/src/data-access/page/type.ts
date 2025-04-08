@@ -1,7 +1,7 @@
 import type {
   GetValues,
   StrapiResponseData,
-} from "@nextjs-strapi-boilerplate/backend";
+} from "@nextjs-strapi-blog/backend";
 
 export type Page = GetValues<"api::page.page"> & {
   id: number;
